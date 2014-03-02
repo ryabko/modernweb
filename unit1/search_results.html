@@ -4,6 +4,7 @@
     <title>Auction Homepage</title>
 
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/slider.css">
 
 </head>
 <body>
@@ -57,12 +58,17 @@
                     <label for="input-price-from">Current Price</label><br/>
                     <div class="row">
                         <div class="col-md-6">
-                            <input type="text" placeholder="$1000" id="input-price-from" class="form-control"/>
+                            <input type="text" placeholder="$1500" id="input-price-from" class="form-control"/>
                         </div>
                         <div class="col-md-6">
-                            <input type="text" placeholder="$1500" id="input-price-to" class="form-control"/>
+                            <input type="text" placeholder="$3500" id="input-price-to" class="form-control"/>
                         </div>
                     </div>
+                </div>
+                <div class="form-group text-center">
+                    <input type="text" class="form-control slider" data-slider-min="0" data-slider-max="5000"
+                           data-slider-step="100" data-slider-value="[1500, 3500]" data-slider-handle="triangle"
+                           data-slider-selection="none"/>
                 </div>
             </div>
             <div class="col-md-4">
@@ -185,6 +191,13 @@
 
 <script src="assets/js/jquery-2.1.0.min.js"></script>
 <script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/bootstrap-slider.js"></script>
+
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('.slider').slider();
+    });
+</script>
 
 </body>
 </html>
