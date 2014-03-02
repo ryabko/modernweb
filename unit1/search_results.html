@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Auction Homepage</title>
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/slider.css">
+
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="navbar navbar-inverse">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="javascript:void(0);">ABC Auction</a>
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="javascript:void(0)"><span class="glyphicon glyphicon-question-sign"></span> Help</a>
+                </li>
+                <li><a href="javascript:void(0);"><span class="glyphicon glyphicon-user"></span> Login</a></li>
+                <li><a href="javascript:void(0)"><span class="glyphicon glyphicon-shopping-cart"></span> Shopping
+                    cart</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- / Navbar -->
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <a href="javascript:void(0);">Home</a> > Search results
+        </div>
+    </div>
+
+    <form>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label for="input-product-title">Product</label>
+                    <input type="text" placeholder="Product title" id="input-product-title" class="form-control"/>
+                </div>
+                <div class="form-group">
+                    <select class="form-control">
+                        <option>Category</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label for="input-price-from">Current Price</label><br/>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <input type="text" value="$1500" id="input-price-from" class="form-control"/>
+                        </div>
+                        <div class="col-md-6">
+                            <input type="text" value="$3500" id="input-price-to" class="form-control"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group text-center">
+                    <input type="text" class="form-control slider" data-slider-min="0" data-slider-max="5000"
+                           data-slider-step="100" data-slider-value="[1500, 3500]" data-slider-handle="triangle"
+                           data-slider-selection="none"/>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label for="input-close-date">Max Auction Close Date</label>
+                    <div class="input-group">
+                        <input type="text" id="input-close-date" class="form-control"/>
+                        <span class="input-group-addon">
+                            <span class="glyphicon glyphicon-calendar"></span>
+                        </span>
+                    </div>
+                </div>
+                <div class="form-horizontal">
+                    <div class="form-group">
+                        <label for="input-number-of-bids" class="col-md-8 control-label">Number of Bids</label>
+                        <div class="col-md-4">
+                            <input type="text" id="input-number-of-bids" value="3" class="form-control"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-md-offset-4">
+                    <button class="form-control btn btn-primary">Find now</button>
+                </div>
+            </div>
+        </div>
+    </form>
+
+    <hr/>
+
+    <div class="row">
+        <!-- Featured Products list with thumbnails and description  -->
+
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="col-md-6">
+                        <a href="javascript:void(0)"><img src="assets/img/01.jpg" alt="" class="img-responsive"></a>
+                    </div>
+
+                    <div class="col-md-6">
+                        <h2><a href="javascript:void(0)">Item's title</a></h2>
+
+                        <p>
+                            <b>Item's description:</b> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                            eiusmod
+                            tempor
+                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                            ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat.
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        6h left<br/>
+                        Today 15:23
+                    </div>
+                    <div class="col-md-4">
+                        <span class="glyphicon glyphicon-eye-open"></span> 17<br/>
+                        Watchers
+                    </div>
+                    <div class="col-md-4">
+                        $1234<br/>
+                        Current Price
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="col-md-6">
+                        <a href="javascript:void(0)"><img src="assets/img/02.jpg" alt="" class="img-responsive"></a>
+                    </div>
+
+                    <div class="col-md-6">
+                        <h2><a href="javascript:void(0)">Item's title</a></h2>
+
+                        <p>
+                            <b>Item's description:</b> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                            eiusmod
+                            tempor
+                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                            ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat.
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        6h left<br/>
+                        Today 15:23
+                    </div>
+                    <div class="col-md-4">
+                        <span class="glyphicon glyphicon-eye-open"></span> 17<br/>
+                        Watchers
+                    </div>
+                    <div class="col-md-4">
+                        $1234<br/>
+                        Current Price
+                    </div>
+                </div>
+            </div>
+
+        <!-- / Featured Products list with thumbnails and description  -->
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-center">
+        <br/>
+        <a href="javascript:void(0)">Home</a> |
+        <a href="javascript:void(0)">Search</a> |
+        <a href="javascript:void(0)">About Us</a> |
+        <a href="javascript:void(0)">Terms of Service</a>
+        <br/><br/>
+    </footer>
+    <!-- / Footer -->
+
+</div>
+
+<script src="assets/js/jquery-2.1.0.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/bootstrap-slider.js"></script>
+
+<script type="text/javascript">
+    $(document).ready(function() {
+        var inputPriceFrom = $("#input-price-from");
+        var inputPriceTo = $("#input-price-to");
+
+        var slider = $('.slider').slider()
+                .on('slide', function(e) {
+                    inputPriceFrom.val("$" + e.value[0]);
+                    inputPriceTo.val("$" + e.value[1]);
+                });
+
+        $("#input-price-from, #input-price-to").on('change', function(e) {
+            var priceFrom = normalizePrice(inputPriceFrom);
+            var priceTo = normalizePrice(inputPriceTo);
+
+            slider.slider('setValue', [priceFrom, priceTo]);
+        });
+    });
+
+    function normalizePrice(input) {
+        var value = input.val();
+
+        // remove all not-digits
+        value = value.replace(/\D/g, '');
+        if (!value)
+            value = "0";
+
+        // add dollar sign for input
+        input.val("$" + value);
+
+        // return number
+        return parseInt(value);
+    }
+</script>
+
+</body>
+</html>
