@@ -58,10 +58,10 @@
                     <label for="input-price-from">Current Price</label><br/>
                     <div class="row">
                         <div class="col-md-6">
-                            <input type="text" placeholder="$1500" id="input-price-from" class="form-control"/>
+                            <input type="text" value="$1500" id="input-price-from" class="form-control"/>
                         </div>
                         <div class="col-md-6">
-                            <input type="text" placeholder="$3500" id="input-price-to" class="form-control"/>
+                            <input type="text" value="$3500" id="input-price-to" class="form-control"/>
                         </div>
                     </div>
                 </div>
@@ -195,8 +195,37 @@
 
 <script type="text/javascript">
     $(document).ready(function() {
-        $('.slider').slider();
+        var inputPriceFrom = $("#input-price-from");
+        var inputPriceTo = $("#input-price-to");
+
+        var slider = $('.slider').slider()
+                .on('slide', function(e) {
+                    inputPriceFrom.val("$" + e.value[0]);
+                    inputPriceTo.val("$" + e.value[1]);
+                });
+
+        $("#input-price-from, #input-price-to").on('change', function(e) {
+            var priceFrom = normalizePrice(inputPriceFrom);
+            var priceTo = normalizePrice(inputPriceTo);
+
+            slider.slider('setValue', [priceFrom, priceTo]);
+        });
     });
+
+    function normalizePrice(input) {
+        var value = input.val();
+
+        // remove all not-digits
+        value = value.replace(/\D/g, '');
+        if (!value)
+            value = "0";
+
+        // add dollar sign for input
+        input.val("$" + value);
+
+        // return number
+        return parseInt(value);
+    }
 </script>
 
 </body>
