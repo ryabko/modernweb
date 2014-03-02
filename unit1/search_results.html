@@ -20,12 +20,6 @@
             <a class="navbar-brand" href="javascript:void(0);">ABC Auction</a>
         </div>
         <div class="navbar-collapse collapse">
-            <form class="navbar-form navbar-left navbar-input-group" role="search">
-                <div class="form-group">
-                    <input type="text" class="form-control" placeholder="Enter product name">
-                </div>
-                <button type="submit" class="btn btn-default">Search</button>
-            </form>
             <ul class="nav navbar-nav navbar-right">
                 <li><a href="javascript:void(0)"><span class="glyphicon glyphicon-question-sign"></span> Help</a>
                 </li>
@@ -39,153 +33,140 @@
 <!-- / Navbar -->
 
 <div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <a href="javascript:void(0);">Home</a> > Search results
+        </div>
+    </div>
+
+    <form>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label for="input-product-title">Product</label>
+                    <input type="text" placeholder="Product title" id="input-product-title" class="form-control"/>
+                </div>
+                <div class="form-group">
+                    <select class="form-control">
+                        <option>Category</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label for="input-price-from">Current Price</label><br/>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <input type="text" placeholder="$1000" id="input-price-from" class="form-control"/>
+                        </div>
+                        <div class="col-md-6">
+                            <input type="text" placeholder="$1500" id="input-price-to" class="form-control"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label for="input-close-date">Max Auction Close Date</label>
+                    <div class="input-group">
+                        <input type="text" id="input-close-date" class="form-control"/>
+                        <span class="input-group-addon">
+                            <span class="glyphicon glyphicon-calendar"></span>
+                        </span>
+                    </div>
+                </div>
+                <div class="form-horizontal">
+                    <div class="form-group">
+                        <label for="input-number-of-bids" class="col-md-8 control-label">Number of Bids</label>
+                        <div class="col-md-4">
+                            <input type="text" id="input-number-of-bids" value="3" class="form-control"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-md-offset-4">
+                    <button class="form-control btn btn-primary">Find now</button>
+                </div>
+            </div>
+        </div>
+    </form>
+
+    <hr/>
 
     <div class="row">
-        <!-- Featured Products -->
+        <!-- Featured Products list with thumbnails and description  -->
 
-        <div id="featured-product-carousel" class="carousel slide" data-pause="hover" data-wrap="true"
-             data-interval="3000">
-            <ol class="carousel-indicators">
-                <li data-target="#featured-product-carousel" data-slide-to="0" class="active"></li>
-                <li data-target="#featured-product-carousel" data-slide-to="1" class=""></li>
-                <li data-target="#featured-product-carousel" data-slide-to="2" class=""></li>
-            </ol>
-            <div class="carousel-inner">
-                <div class="item active">
-                    <img src="assets/img/promo-product-1.jpg" alt="ABC Auction Deals" class="img-responsive center-block">
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="col-md-6">
+                        <a href="javascript:void(0)"><img src="assets/img/01.jpg" alt="" class="img-responsive"></a>
+                    </div>
+
+                    <div class="col-md-6">
+                        <h2><a href="javascript:void(0)">Item's title</a></h2>
+
+                        <p>
+                            <b>Item's description:</b> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                            eiusmod
+                            tempor
+                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                            ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat.
+                        </p>
+                    </div>
                 </div>
-                <div class="item">
-                    <img src="assets/img/promo-product-2.jpg" alt="ABC Auction Deals" class="img-responsive center-block">
-                </div>
-                <div class="item">
-                    <img src="assets/img/promo-product-3.jpg" alt="ABC Auction Deals" class="img-responsive center-block">
+                <div class="row">
+                    <div class="col-md-4">
+                        6h left<br/>
+                        Today 15:23
+                    </div>
+                    <div class="col-md-4">
+                        <span class="glyphicon glyphicon-eye-open"></span> 17<br/>
+                        Watchers
+                    </div>
+                    <div class="col-md-4">
+                        $1234<br/>
+                        Current Price
+                    </div>
                 </div>
             </div>
 
-            <!-- Controls -->
-            <a class="left carousel-control" href="#featured-product-carousel" data-slide="prev">
-                <span class="glyphicon glyphicon-chevron-left"></span>
-            </a>
-            <a class="right carousel-control" href="#featured-product-carousel" data-slide="next">
-                <span class="glyphicon glyphicon-chevron-right"></span>
-            </a>
-        </div>
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="col-md-6">
+                        <a href="javascript:void(0)"><img src="assets/img/02.jpg" alt="" class="img-responsive"></a>
+                    </div>
 
-        <!-- / Featured Products -->
-    </div>
-    <br/><br/>
-    <div class="row">
-        <!-- Featured Products list with thumbnails and description  -->
-        <ul class="list-unstyled">
-            <li class="col-sm-4">
-                <div class="col-md-4">
-                    <a href="javascript:void(0)"><img src="assets/img/01.jpg" alt="" class="img-responsive"></a>
+                    <div class="col-md-6">
+                        <h2><a href="javascript:void(0)">Item's title</a></h2>
+
+                        <p>
+                            <b>Item's description:</b> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                            eiusmod
+                            tempor
+                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                            ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat.
+                        </p>
+                    </div>
                 </div>
-
-                <div class="product-description-holder col-md-8">
-                    <h2><a href="javascript:void(0)">Item's title</a></h2>
-
-                    <p>
-                        <b>Item's description:</b> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                        eiusmod
-                        tempor
-                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                        ullamco
-                        laboris nisi ut aliquip ex ea commodo consequat.
-                    </p>
+                <div class="row">
+                    <div class="col-md-4">
+                        6h left<br/>
+                        Today 15:23
+                    </div>
+                    <div class="col-md-4">
+                        <span class="glyphicon glyphicon-eye-open"></span> 17<br/>
+                        Watchers
+                    </div>
+                    <div class="col-md-4">
+                        $1234<br/>
+                        Current Price
+                    </div>
                 </div>
-            </li>
-            <li class="col-sm-4">
-                <div class="col-md-4">
-                    <a href="javascript:void(0)"><img src="assets/img/02.jpg" alt="" class="img-responsive"></a>
-                </div>
+            </div>
 
-                <div class="col-md-8">
-                    <h2><a href="javascript:void(0)">Item's title</a></h2>
-
-                    <p>
-                        <b>Item's description:</b> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                        eiusmod
-                        tempor
-                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                        ullamco
-                        laboris nisi ut aliquip ex ea commodo consequat.
-                    </p>
-                </div>
-            </li>
-            <li class="col-sm-4">
-                <div class="col-md-4">
-                    <a href="javascript:void(0)"><img src="assets/img/03.jpg" alt="" class="img-responsive"></a>
-                </div>
-
-                <div class="col-md-8">
-                    <h2><a href="javascript:void(0)">Item's title</a></h2>
-
-                    <p>
-                        <b>Item's description:</b> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                        eiusmod
-                        tempor
-                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                        ullamco
-                        laboris nisi ut aliquip ex ea commodo consequat.
-                    </p>
-                </div>
-            </li>
-            <li class="col-sm-4">
-                <div class="col-md-4">
-                    <a href="javascript:void(0)"><img src="assets/img/04.jpg" alt="" class="img-responsive"></a>
-                </div>
-
-                <div class="col-md-8">
-                    <h2><a href="javascript:void(0)">Item's title</a></h2>
-
-                    <p>
-                        <b>Item's description:</b> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                        eiusmod
-                        tempor
-                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                        ullamco
-                        laboris nisi ut aliquip ex ea commodo consequat.
-                    </p>
-                </div>
-            </li>
-            <li class="col-sm-4">
-                <div class="col-md-4">
-                    <a href="javascript:void(0)"><img src="assets/img/05.jpg" alt="" class="img-responsive"></a>
-                </div>
-
-                <div class="col-md-8">
-                    <h2><a href="javascript:void(0)">Item's title</a></h2>
-
-                    <p>
-                        <b>Item's description:</b> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                        eiusmod
-                        tempor
-                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                        ullamco
-                        laboris nisi ut aliquip ex ea commodo consequat.
-                    </p>
-                </div>
-            </li>
-            <li class="col-sm-4">
-                <div class="col-md-4">
-                    <a href="javascript:void(0)"><img src="assets/img/06.jpg" alt="" class="img-responsive"></a>
-                </div>
-
-                <div class="col-md-8">
-                    <h2><a href="javascript:void(0)">Item's title</a></h2>
-
-                    <p>
-                        <b>Item's description:</b> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                        eiusmod
-                        tempor
-                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                        ullamco
-                        laboris nisi ut aliquip ex ea commodo consequat.
-                    </p>
-                </div>
-            </li>
-        </ul>
         <!-- / Featured Products list with thumbnails and description  -->
     </div>
 
