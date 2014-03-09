@@ -1,19 +1,17 @@
 /// <reference path='../refs.ts'/>
 
 module auction.controllers {
-  'use strict';
+    'use strict';
 
-  export class MainController {
-      static $inject = ['$scope'];
+    export class MainController {
+        static $inject = ['$scope', '$window'];
 
-      constructor($scope) {
-        $scope.awesomeThings = [
-          'HTML5 Boilerplate',
-          'AngularJS',
-          'Karma'
-        ];
-      }
-  }
+        constructor($scope, $window) {
+            $scope.search = function (path:string) {
+                $window.location.href = path;
+            }
+        }
+    }
 
-  angular.module('auction').controller('MainCtrl', MainController);
+    angular.module('auction').controller('MainCtrl', MainController);
 }
