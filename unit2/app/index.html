@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
   </head>
-  <body ng-app="auction" ng-init="currentPage = 'main'">
+  <body ng-app="auction">
     <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
@@ -33,15 +33,15 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" ng-click="currentPage = 'main'" href="javascript:void(0);">ABC Auction</a>
+            <a class="navbar-brand" href="#/">ABC Auction</a>
         </div>
         <div class="navbar-collapse collapse">
             <form class="navbar-form navbar-left navbar-input-group" role="search" method="get"
-                  onsubmit="return false;">
+                  action="#/search">
                 <div class="form-group">
                     <input type="text" class="form-control" placeholder="Enter product name">
                 </div>
-                <button type="submit" class="btn btn-default" ng-click="currentPage = 'search'">Search</button>
+                <button type="submit" class="btn btn-default">Search</button>
             </form>
             <ul class="nav navbar-nav navbar-right">
                 <li><a href="javascript:void(0)"><span class="glyphicon glyphicon-question-sign"></span> Help</a>
@@ -55,8 +55,7 @@
 </div>
 <!-- / Navbar -->
 
-<div class="container" ng-if="currentPage == 'main'" ng-include="'views/main.html'" ng-controller="MainCtrl"></div>
-<div class="container" ng-if="currentPage == 'search'" ng-include="'views/search.html'" ng-controller="SearchCtrl"></div>
+<div class="container" ng-view></div>
 
     <!-- Footer -->
     <footer class="text-center">
@@ -79,6 +78,7 @@
     <script src="bower_components/jquery/dist/jquery.js"></script>
     <script src="bower_components/angular/angular.js"></script>
     <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
