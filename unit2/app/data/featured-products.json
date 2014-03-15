@@ -1,0 +1,59 @@
+{
+    "heading": "Featured Products",
+    "items": [
+        {
+            "title": "Item 1",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
+            "thumb": "images/01.jpg",
+            "url": "",
+            "timeLeft": "6",
+            "watchers": "17",
+            "price": "1234"
+        },
+        {
+            "title": "Item 2",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
+            "thumb": "images/02.jpg",
+            "url": "",
+            "timeLeft": "6",
+            "watchers": "17",
+            "price": "1234"
+        },
+        {
+            "title": "Item 3",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
+            "thumb": "images/03.jpg",
+            "url": "",
+            "timeLeft": "6",
+            "watchers": "17",
+            "price": "1234"
+        },
+        {
+            "title": "Item 4",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
+            "thumb": "images/04.jpg",
+            "url": "",
+            "timeLeft": "6",
+            "watchers": "17",
+            "price": "1234"
+        },
+        {
+            "title": "Item 5",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
+            "thumb": "images/05.jpg",
+            "url": "",
+            "timeLeft": "6",
+            "watchers": "17",
+            "price": "1234"
+        },
+        {
+            "title": "Item 6",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
+            "thumb": "images/06.jpg",
+            "url": "",
+            "timeLeft": "6",
+            "watchers": "17",
+            "price": "1234"
+        }
+    ]
+}
