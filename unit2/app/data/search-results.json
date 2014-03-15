@@ -1,0 +1,23 @@
+{
+    "heading": "Search Results",
+    "items": [
+        {
+            "title": "Item 1",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
+            "thumb": "images/01.jpg",
+            "url": "",
+            "timeLeft": "6",
+            "watchers": "17",
+            "price": "1234"
+        },
+        {
+            "title": "Item 2",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
+            "thumb": "images/02.jpg",
+            "url": "",
+            "timeLeft": "6",
+            "watchers": "17",
+            "price": "1234"
+        }
+    ]
+}

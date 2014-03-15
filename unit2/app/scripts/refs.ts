@@ -3,6 +3,7 @@
 //grunt-start
 /// <reference path="app.ts" />
 /// <reference path="controller/MainController.ts" />
+/// <reference path="controller/SearchController.ts" />
 /// <reference path="model/ProductModel.ts" />
 /// <reference path="service/ProductService.ts" />
 //grunt-end
