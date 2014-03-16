@@ -14,6 +14,10 @@ angular.module('auction', ['ngRoute'])
                 templateUrl: 'views/search.html',
                 controller: 'SearchCtrl'
             })
+            .when('/product', {
+                templateUrl: 'views/product.html',
+                controller: 'ProductCtrl'
+            })
             .otherwise({
                 redirectTo: '/'
             });
