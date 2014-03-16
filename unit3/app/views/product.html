@@ -14,9 +14,7 @@
         <img ng-src="{{ model.product.thumb }}" class="img-responsive"/>
         <div>
             <span class="glyphicon glyphicon-chevron-left"></span>
-            <img src="{{ model.product.thumb }}" width="10%"/>
-            <img src="{{ model.product.thumb }}" width="10%"/>
-            <img src="{{ model.product.thumb }}" width="10%"/>
+            <img ng-src="{{ thumb }}" width="10%" ng-repeat="thumb in model.product.thumbs"/>
             <span class="glyphicon glyphicon-chevron-right"></span>
         </div>
         <br/>

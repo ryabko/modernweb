@@ -6,6 +6,7 @@ module auction.model {
         title: string;
         description: string;
         thumb: string;
+        thumbs: string[];
         timeLeft: number;
         watchers: number;
         price: number;
