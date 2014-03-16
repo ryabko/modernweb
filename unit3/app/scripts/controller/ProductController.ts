@@ -15,17 +15,31 @@ module auction.controller {
     }
 
     export class ProductController {
-        private static $inject = ['$scope', '$routeParams', 'ProductService'];
+//        private static $inject = ['$scope', '$routeParams', 'ProductService'];
 
-        public product: m.ProductModel;
+//        public product: m.ProductModel;
+
+//        constructor(private $scope: IProductScope,
+//                    private $routeParams: IProductRouteParams,
+//                    private productService: s.IProductService) {
+//            this.$scope.model = this;
+//
+//            this.productService.getById($routeParams.id)
+//                .then((product) => this.product = product);
+//        }
+
+        private static $inject = ['$scope', 'product'];
+
+        public static resolve = {
+            product: ['$route', 'ProductService', ($route: ng.route.IRouteService,
+                                                   productService: s.IProductService) => {
+                return productService.getById($route.current.params.id);
+            }]
+        };
 
         constructor(private $scope: IProductScope,
-                    private $routeParams: IProductRouteParams,
-                    private productService: s.IProductService) {
+                    public product: m.ProductModel) {
             this.$scope.model = this;
-
-            this.productService.getById($routeParams.id)
-                .then((product) => this.product = product);
         }
     }
 

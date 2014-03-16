@@ -16,7 +16,8 @@ module auction {
                 })
                 .when('/product/:id', {
                     templateUrl: 'views/product.html',
-                    controller: 'ProductCtrl'
+                    controller: 'ProductCtrl',
+                    resolve: auction.controller.ProductController.resolve
                 })
                 .otherwise({
                     redirectTo: '/'
