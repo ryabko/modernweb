@@ -32,7 +32,7 @@
         <div class="row">
             <div class="col-md-6">
                 <strong>Current Price</strong><br/>
-                {{ model.product.price | currency}} [ 5 bids ]<br/>
+                {{ model.product.price | currency}} [ {{ model.product.bids }} bids ]<br/>
                 <strong>Time left {{ model.product.timeLeft}}h</strong><br/>
                 Today 15:23
             </div>
