@@ -2,10 +2,16 @@
     <div class="col-md-9">
         <a href="#/">Home</a> > <a href="#/">Category title</a> > Item
     </div>
-    <div class="col-md-3">
-        <button class="form-control btn btn-primary">Find more</button>
+    <div class="col-md-3 text-right">
+        <a class="form-control btn btn-primary"
+                ng-if="!model.isVisibleAdvancedSearch" ng-click="model.isVisibleAdvancedSearch = true">Find more</a>
+
+        <a href="javascript:void(0);" class="glyphicon glyphicon-remove"
+           ng-if="model.isVisibleAdvancedSearch" ng-click="model.isVisibleAdvancedSearch = false"></a>
     </div>
 </div>
+
+<auction-advanced-search ng-if="model.isVisibleAdvancedSearch"></auction-advanced-search>
 
 <hr/>
 

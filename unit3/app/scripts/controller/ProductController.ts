@@ -30,6 +30,8 @@ module auction.controller {
 
         private static $inject = ['$scope', 'product'];
 
+        public isVisibleAdvancedSearch: boolean;
+
         public static resolve = {
             product: ['$route', 'ProductService', ($route: ng.route.IRouteService,
                                                    productService: s.IProductService) => {
@@ -40,6 +42,7 @@ module auction.controller {
         constructor(private $scope: IProductScope,
                     public product: m.ProductModel) {
             this.$scope.model = this;
+            this.isVisibleAdvancedSearch = false;
         }
     }
 
