@@ -1,5 +1,5 @@
 {
-    "heading": "Featured Products",
+    "heading": "Products",
     "items": [
         {
             "id": "1",
@@ -22,6 +22,7 @@
             "price": "1234",
             "bids": "5",
             "seller": "StarMotors (135) 100% Positive feedback"
+
         },
         {
             "id": "3",

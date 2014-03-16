@@ -11,31 +11,31 @@
 
 <div class="row">
     <div class="col-md-5">
-        <img src="images/01.jpg" class="img-responsive"/>
+        <img ng-src="{{ model.product.thumb }}" class="img-responsive"/>
         <div>
             <span class="glyphicon glyphicon-chevron-left"></span>
-            <img src="images/01.jpg" width="10%"/>
-            <img src="images/01.jpg" width="10%"/>
-            <img src="images/01.jpg" width="10%"/>
+            <img src="{{ model.product.thumb }}" width="10%"/>
+            <img src="{{ model.product.thumb }}" width="10%"/>
+            <img src="{{ model.product.thumb }}" width="10%"/>
             <span class="glyphicon glyphicon-chevron-right"></span>
         </div>
         <br/>
         <div class="row">
             <span class="glyphicon glyphicon-eye-open"></span>
-            17 Watchers
+            {{ model.product.watchers }} Watchers
             <a href="javascript:void(0);">Watch</a>
         </div>
     </div>
     <div class="col-md-7">
-        <h2>Item title</h2>
+        <h2>{{ model.product.title }}</h2>
         <div>
-            Seller: starmotors (135) 100% Positive feedback
+            Seller: {{ model.product.seller }}
         </div>
         <div class="row">
             <div class="col-md-6">
                 <strong>Current Price</strong><br/>
-                $1234 [ 5 bids ]<br/>
-                <strong>Time left 6h</strong><br/>
+                {{ model.product.price | currency}} [ 5 bids ]<br/>
+                <strong>Time left {{ model.product.timeLeft}}h</strong><br/>
                 Today 15:23
             </div>
             <div class="col-md-6">
@@ -49,12 +49,7 @@
         </div>
         <div>
             <b>Item's description</b>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                laboris nisi ut aliquip ex ea commodo consequat
-            </p>
+            <p>{{ model.product.description }}</p>
         </div>
     </div>
 </div>

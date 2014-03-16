@@ -14,7 +14,7 @@ angular.module('auction', ['ngRoute'])
                 templateUrl: 'views/search.html',
                 controller: 'SearchCtrl'
             })
-            .when('/product', {
+            .when('/product/:id', {
                 templateUrl: 'views/product.html',
                 controller: 'ProductCtrl'
             })

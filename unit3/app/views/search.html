@@ -14,11 +14,11 @@
         <div class="col-md-6" ng-repeat="product in model.searchResults">
             <div class="row">
                 <div class="col-md-6">
-                    <a href="javascript:void(0)"><img ng-src="{{ product.thumb }}" alt="" class="img-responsive"></a>
+                    <a ng-href="#/product/{{ product.id }}"><img ng-src="{{ product.thumb }}" alt="" class="img-responsive"></a>
                 </div>
 
                 <div class="col-md-6">
-                    <h2><a href="javascript:void(0)">{{ product.title }}</a></h2>
+                    <h2><a ng-href="#/product/{{ product.id }}">{{ product.title }}</a></h2>
                     <p>
                         <b>Item's description:</b> {{ product.description }}.
                     </p>
